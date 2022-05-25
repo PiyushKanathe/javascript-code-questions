@@ -1,13 +1,14 @@
 // 1) "this"
-// // this referce to the object it is being used inside or the this references the object that is currently calling the function(we can bind the function to different objects with call, bind and apply methods).
+// // this referce to the object it is being used inside or the this references the object that is currently calling the function
+// // (we can bind the function to different objects with call, bind and apply methods).
 // let counter = {
 //     count: 0,
 //     next: function () {
 //       console.log( ++this.count )
 //     },
-//   };
-  
+//   };  
 //   counter.next();
+
 // // A line of code written outside a function is said to belong to the global context and the value of this in this global context is the same as the global object.
 // // this of a function referce to the object they are in. in this context it, this of below function will refer to global object which have value = 10 
 // var value = 10;

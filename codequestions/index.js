@@ -18,7 +18,7 @@ mainD.innerHTML = `<h1>Hello</h1>`;
 // }
 // console.log(multi(2)(3)(4)());
 
-// // 3) how many wways we empty an array
+// // 3) how many ways we empty an array
 // var arrayList = ['a', 'b', 'c', 'd', 'e', 'f'];
 // arrayList = []; // empty only mentioned array
 // arrayList.length = 0; // empty array and all the references made from this array
@@ -80,7 +80,6 @@ mainD.innerHTML = `<h1>Hello</h1>`;
 //   }
 // }
 // d()
-
 
 //// 8) closure
 // var answer = 0;
