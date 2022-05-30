@@ -32,7 +32,31 @@
 //   console.log(gen.next().value); // 13
 //   console.log(gen.next().value); // 20
 
-console.log(3 + '1')
-console.log('3' * 1)
-console.log('3' - 3)
-console.log( null + 25)
+// console.log(3 + '1')
+// console.log('3' * 1)
+// console.log('3' - 3)
+// console.log( null + 25)
+console.log(true + true)
+console.log(true + false)
+console.log(false + false)
+
+console.log(true * true)
+console.log(true * false)
+console.log(false * false)
+
+
+// const parentObject = {
+//     g1: `Hay, Im the parent`,
+//     childObject: {
+//         g2: `Hay, Im the child`,
+//         makeAnnouncemnet: function(){
+//             console.log(this.g1 + ' and ' + this.g2);
+//         }
+//     },
+//     hello: () => {
+//         console.log('g1', this.g1)
+//     }
+// }
+
+// parentObject.childObject.makeAnnouncemnet()
+// parentObject.hello()
