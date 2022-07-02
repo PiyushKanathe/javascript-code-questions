@@ -1,3 +1,6 @@
+// // OBJECT
+
+
 // 1) "this"
 // // this referce to the object it is being used inside or the this references the object that is currently calling the function
 // // (we can bind the function to different objects with call, bind and apply methods).
@@ -28,6 +31,7 @@
 // }
 // addToGlobal()
 // console.log(window.newPropery)
+
 
 //// 2) call bind apply
 // let obj = {
@@ -65,3 +69,111 @@
 // me.thisInRegular();
 // me.thisInArrow();
 
+
+// // 3)
+// /* 
+// - Write method findPath
+// - Should take two params: - object  - keys separated by dots as string
+// - Return value if it exists at that path inside the object, else return undefined
+// */
+
+// const findPath = (objVal, str) => {
+//     let arr = str.split('.')
+//     let obj = objVal
+//     var output;
+
+//     for (let i=0; i< arr.length; i++){
+//         var key = arr[i];
+//         if(typeof obj === "object" && key in obj){
+//             output = obj[arr[i]]
+//             obj = obj[arr[i]]
+//         }
+//         else{
+//             output = undefined
+//         }
+//     }
+
+//     return output
+// }
+// var obj = {
+//     a: {
+//         b: {
+//             c: 12,
+//             j: false
+//         },
+//         k: null
+//     }
+// };
+// console.log(findPath(obj, 'a.b.c')); // 12
+// console.log(findPath(obj, 'a.b')); // {c: 12, j: false}
+// console.log(findPath(obj, 'a.b.d')); // undefined
+// console.log(findPath(obj, 'a.c')); // undefined
+// console.log(findPath(obj, 'a.b.c.d')); // undefined
+// console.log(findPath(obj, 'a.b.c.d.e')); // undefined
+// console.log(findPath(obj, 'a.b.j')); //false
+// console.log(findPath(obj, 'a.b.j.k')); //undefined
+// console.log(findPath(obj, 'a.k')); //null
+
+// // 4)
+// // What will be the result
+// const parentObject = {
+//     g1: `Hay, Im the parent`,
+//     childObject: {
+//         g2: `Hay, Im the child`,
+//         makeAnnouncemnet: function(){
+//             console.log(this.g1 + ' and ' + this.g2);
+//         }
+//     },
+//     hello: () => {
+//         console.log('g1', this.g1)
+//     }
+// }
+
+// parentObject.childObject.makeAnnouncemnet()
+// parentObject.hello()
+
+
+// // 5) destructuring
+// let a = {
+//   prop: "arrow",
+//   props: "cab",
+//   propss: "dh",
+//   kab: {
+//     app: "sub",
+//     bpp: "dub",
+//   },
+//   deb: [1, 2, 3, 4],
+// };
+// let {
+//   prop,
+//   kab: { app: kappa },
+//   deb: [, aa],
+// } = a;
+// // console.log(aa);
+
+
+// // 6) this scope
+// const carDetails = {
+//   name: "Tomer",
+//   getName(){
+//      return this.name;
+//   },
+  
+// };
+// var name = "Joe";
+// var getCarName = carDetails.getName;
+// console.log(getCarName());
+
+// // 7)
+// var person = {
+//     name: 'Alvin',
+//     mobile: 87647346464,
+//     email: 'alvin@gmail.com'
+// }
+// // No of properties in object
+// let len = Object.keys(person).length
+// console.log(len)
+// // Delete object property without delete operator 
+// const {email, ...newPerson} = person
+// console.log(person)
+// console.log(newPerson)

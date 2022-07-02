@@ -1,53 +1,40 @@
-var arr = [1,2,3,4]
+// // ASYNC - learn about "EVENT LOOPING"
 
-// add all values without looping
-let x = arr.reduce((a, b)=> {return a+b})
-console.log(x)
-// filter values grater then 1
-arr.filter(val => {return val>1})
-// add value at the first index of array
-arr.unshift(9)
-console.log(arr)
 
-var person = {
-    name: 'Alvin',
-    mobile: 87647346464,
-    email: 'alvin@gmail.com'
-}
-// No of properties in object
-// console.log(len)
-let len = Object.keys(person).length
-console.log(len)
-// Delete object property without delete operator 
-const {email, ...newPerson} = person
-console.log(person)
-console.log(newPerson)
-
+// // 1)
 // // promise Chaining 
 // new Promise(function(resolve, reject) {
-
 //     setTimeout(() => resolve(1), 1000);
-  
 //   }).then(function(result) {
-  
-//     alert(result); // 1
-  
+//     console.log(result); // 1
 //     return new Promise((resolve, reject) => { // (*)
 //       setTimeout(() => resolve(result * 2), 1000);
 //     });
-  
 //   }).then(function(result) { // (**)
-  
-//     alert(result); // 2
-  
+//     console.log(result); // 2
 //     return new Promise((resolve, reject) => {
 //       setTimeout(() => resolve(result * 2), 1000);
 //     });
-  
 //   }).then(function(result) {
-  
-//     alert(result); // 4
-  
+//     console.log(result); // 4
 //   });
 
-// for of = Array and for in = object
+
+// // 2)
+//   functionOne = function () {
+//     console.info("First");
+//     setTimeout(() => {
+//       console.info("After");
+//     }, 5000);
+//     console.info("waiting..");
+//   };
+//   functionTwo = function () {
+//     console.info("second");
+//   };
+//   functionOne();
+//   functionTwo();
+  // // output
+  // First
+  // waiting..
+  // second
+  // After

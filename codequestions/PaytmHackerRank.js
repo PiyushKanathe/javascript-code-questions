@@ -1,11 +1,11 @@
 // // Hacker rank questions
-// //1) 
+// //1)
 
 // let person = {
 //     name: 'Leonardo'
 // }
 
-// let animal = { 
+// let animal = {
 //     spieces: "snake"
 // }
 
@@ -14,7 +14,7 @@
 // console.log(person)
 // // output : { name : "Leonardo"}
 
-// // 2) 
+// // 2)
 // let dummyObj = {
 //     price: 199,
 //     get_price: function(){
@@ -29,7 +29,7 @@
 // console.log(realObj.price)
 // // output : 199
 
-//  // 3) 
+//  // 3)
 //  // I)
 //  var a = 1;
 //  (function(){
@@ -61,10 +61,10 @@
 //         var count = 10;
 //     }
 //     sendOrder()
-// } 
+// }
 // placeOrder()
 
-// // // 5) 
+// // // 5)
 // function Rect (l, b){
 //     this.length = l;
 //     this.breadth = b;
@@ -78,14 +78,14 @@
 //     console.log(this.length * this.breadth)
 // }
 
-// Rect.prototype.area2 = function(){
+// Rect.prototype.area2 = () =>{
 //     console.log(this.length * this.breadth)
 // }
 
 // let rect = new Rect(2, 5)
 // rect.area(); // 10
 // rect.area1(); // 10
-// rect.area2(); // 10
+// rect.area2(); // NaN
 
 // // 6
 // const arr = [0, 1, 3, 2, 5, 11, 112, 21, 12, 111, 4]
@@ -105,8 +105,9 @@
 // const arr = [-1, 0, 1, 0, 4, -1, 0, -2]
 // arr.filter(a=>a)
 // console.log(arr)
+// // output: [-1, 0, 1, 0, 4, -1, 0, -2]
 
-// // 9 
+// // 9
 // (function(){
 //     setTimeout(()=> console.log(1), 2000);
 //     console.log(2);
@@ -132,14 +133,15 @@
 //     return bar();
 //     function bar(){return 8;};
 // }
-// console.log(foo()) 
+// console.log(foo()) // 8
 
-// (function(){
-//     var a = b = 4;
-//     const x = y = 5
-// })()
 
-// console.log(a)
-// console.log(b)
-// console.log(x)
-// console.log(y)
+
+(function () {
+  var a = b = 4;
+  const x = y = 5;
+  console.log(a);
+  console.log(b);
+  console.log(x);
+  console.log(y);
+})();

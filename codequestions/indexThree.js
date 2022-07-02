@@ -1,4 +1,4 @@
-// Ployfills
+// POLYFILLS
 
 // // 1) Reduce method polyfill
 // Array.prototype.changedReduce = function(fn, initialSt){
