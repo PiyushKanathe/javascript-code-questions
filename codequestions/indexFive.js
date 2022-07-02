@@ -1,6 +1,5 @@
 // // FUNCTIONS
 
-
 // // 1)
 // // What will be the result of these generator functions consoles
 
@@ -24,7 +23,6 @@
 //   console.log(gen.next().value); // 13
 //   console.log(gen.next().value); // 20
 
-
 // // 2) currying example
 // multi(2)(3)(4)(); //24
 
@@ -35,7 +33,6 @@
 //   };
 // }
 // console.log(multi(2)(3)(4)());
-
 
 //// 3) let const scope - function output will be different if we use let i or var i
 // function b () {
@@ -58,7 +55,6 @@
 // }
 // d()
 
-
 // // 4)
 // var answer = 0;
 
@@ -70,7 +66,6 @@
 
 // answer = multiple(5);
 // console.log(answer);
-
 
 // // 5)
 // // func([1,2,3,4,5], 2)
@@ -93,9 +88,7 @@
 // }
 // arrSplit([1, 2, 3, 4, 5], 3);
 
-
 // // 6)
-// // for of = Array and for in = object
 // // This is a demo task.
 // // Write a function:
 // // function solution(A);
@@ -110,49 +103,30 @@
 // // console.log('this is a debug message');
 
 // function solution(A) {
-//     // write your code in JavaScript (Node.js 8.9.4)
-//     let max = A.reduce((pre, curr) => {
-//       return Math.max(pre, curr);
-//     });
-  
-//     let min = A.reduce((pre, curr) => {
-//       return Math.min(pre, curr);
-//     });
-  
-//     let final = null;
-  
-//     for (let i = min; i <= max; i++) {
-//       let na = A.includes(i);
-//       if (na === false) {
-//         final = i;
-//       }
+//   // only positive values, sorted
+//   A = A.filter((x) => x >= 1).sort((a, b) => a - b);
+//   let x = 1;
+//   for (let i = 0; i < A.length; i++) {
+//     // if we find a smaller number no need to continue, cause the array is sorted
+//     if (x < A[i]) {
+//       return x;
 //     }
-  
-//     if (final === null && max < 0) {
-//       return 1;
-//     } else if (final === null) {
-//       return max + 1;
-//     } else if (final < 0) {
-//       return 1;
-//     } else if (final === 0) {
-//       return final + 1;
-//     } else {
-//       return final;
-//     }
+//     x = A[i] + 1;
 //   }
-  
+//   return x;
+// }
+
 //   let result = solution([1, 2, 3]);
 //   let result2 = solution([1, 2, 3, 4, 6, 1, 3]);
 //   let result3 = solution([-1, -2, -1]);
 //   let result4 = solution([-4, -2, -3]);
 //   let result5 = solution([-1, -3]);
-  
+
 //   console.log(result);
 //   console.log(result2);
 //   console.log(result3);
 //   console.log(result4);
 //   console.log(result5);
-
 
 // // 7)
 // // get the most repeated word and its count
@@ -169,14 +143,13 @@
 //     }
 //   }
 //   let ans = Object.keys(obj).reduce((a, b) => (obj[a] > obj[b]) ? a : b);
-//   return {[ans] : obj[ans]} 
+//   return {[ans] : obj[ans]}
 // };
 
 // let a = getRpeated("Bob hit a ball the hit BALL flew far after it was Hit");
 // console.log(a);
 
-
-// // 8) 
+// // 8)
 //// Valid Parentheses
 // //Input: s = ""()[]{}""
 // //Output: true
