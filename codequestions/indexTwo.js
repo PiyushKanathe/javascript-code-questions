@@ -1,7 +1,7 @@
 // // OBJECT
 
 
-// 1) "this"
+// 1) "this" - It is an spacial identifier which is automatically gets defined inside an object and function. In both cases it refers to an object.
 // // this referce to the object it is being used inside or the this references the object that is currently calling the function
 // // (we can bind the function to different objects with call, bind and apply methods).
 // let counter = {
@@ -32,6 +32,68 @@
 // addToGlobal()
 // console.log(window.newPropery)
 
+// // Properties of this keyword
+// I) Implicit Binding:
+// When a method is called on an object, this refers to the object the method was called on.
+// javascript
+// Copy code
+// let person = {
+//   name: 'John',
+//   greet: function() {
+//     console.log(`Hello, ${this.name}!`);
+//   }
+// };
+// person.greet(); // Outputs: Hello, John!
+
+// II) Explicit Binding:
+// You can explicitly set the value of this using methods like call(), apply(), or bind().
+// javascript
+// Copy code
+// function greet() {
+//   console.log(`Hello, ${this.name}!`);
+// }
+// let person = {
+//   name: 'John'
+// };
+// greet.call(person); // Outputs: Hello, John!
+
+// III) Constructor Functions:
+// When a function is used as a constructor (via the new keyword), this refers to the newly created instance.
+// javascript
+// Copy code
+// function Person(name) {
+//   this.name = name;
+// }
+// let john = new Person('John');
+// console.log(john.name); // Outputs: John
+
+
+// IV) Arrow Functions:
+// Arrow functions do not have their own this binding. Instead, they inherit this from the enclosing scope.
+// javascript
+// Copy code
+// let person = {
+//   name: 'John',
+//   greet: function() {
+//     setTimeout(() => {
+//       console.log(`Hello, ${this.name}!`);
+//     }, 1000);
+//   }
+// };
+// person.greet(); // Outputs: Hello, John! (even after 1 second)
+
+// V) Global Object (or undefined in strict mode):
+// In the global scope or in functions not bound to any object, this refers to the global object (window in a browser environment). In strict mode, it is undefined.
+// javascript
+// Copy code
+// console.log(this === window); // Outputs: true (in a browser environment)
+
+// VI) Event Handlers:
+// In event handler functions, this typically refers to the DOM element that triggered the event.
+// html
+// Copy code
+// <button onclick="console.log(this)">Click me</button>
+
 
 //// 2) call bind apply
 // let obj = {
@@ -51,7 +113,7 @@
 // // y()
 
 // // Arrow function behavior with this -  Arrow functions treat this keyword differently. 
-// // They don’t define their own context since it doesn’t have its own this context. 
+// // it don’t define its own context since it doesn’t have its own this context. 
 // // They inherit that from the parent scope whenever you call this.
 // // in the arrow function, this has nothing to do with the caller object of the function. 
 // // It refers to the scope where the function (the enclosing context) is present. thats why below arrow function will print "My name is xyz"

@@ -1,5 +1,5 @@
-var mainD = document.getElementById("main");
-mainD.innerHTML = `<h1>Hello</h1>`;
+// var mainD = document.getElementById("main");
+// mainD.innerHTML = `<h1>Hello</h1>`;
 
 // HTML
 // 1. Explain about HTML5 new layout elements introduced - Header, nav, section, article, aside, footer.
@@ -12,27 +12,37 @@ mainD.innerHTML = `<h1>Hello</h1>`;
 // 6. Difference between local and session storage in JavaScript.
 // 7. What is doctype in html5 – it’s a very first line in html document. It tells the browser what to expect, what version of HTML the document is written on.
 // 8. How we make web site responsive without using CSS framework
-// 9. html 5 api
+//        I) Viewport meta tag: add it inside <head>
+//              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+//        II) Flexible layouts, ex: max-width: 100%
+//       III) Media Queries: @media (max-width: 768px)
+//        IV) Flexible Grid System. .container{ display: flex; flex-wrap: wrap}
+//         V) Fluid Typography: use relative units like em and rem 
+// 9. html 5 api - canvas api, geolocation api, web storage api (session storage and local storage), Audio & Video, drag and drop, notification api, web sockets. 
 
 
 // CSS
 // 0. box model – CSS box model is a box that wraps around every html element (content, padding, border, margin)
 // 1. Difference between visibility: hidden & display: none
 //        display:none means that the tag will not appear on the page at all (although you can still interact with it through the dom). There will be no space allocated for it between the other tags. visibility:hidden means that unlike display:none, the tag is not visible, but space is allocated for it on the page. The tag is rendered, it just isn't seen on the page
-// 2. Explain precedence rule.
+// 2. Explain precedence rule. depends on specificity !important, inline, id, classes, elements
 // 3. Inline styles, id, class – which property/rule will be added first.
 // 4. If can’t edit id still want to use class then how can we do. (Without changing any code)
 // 5. Place section/div into the center of the div. show using plain CSS. 1) draw div with 100px of width and height and assign it to center. 2) now draw one more div inside with 20px of height and width position it to top right corner. 3) Different ways to implement above.
 // 6. what is flex box? – it helps with making flexible responsive layout without using float or positioning
           // Display: flex
           // Flex-direction: row | row-reverse | column | column-reverse
-          // align-self: flex-start | flex-end | center | baseline | stretch
+          // align-items: flex-start | flex-end | center | baseline | stretch
           // justify-content: start |  center | space-between | space-around | space-evenly
+          // aline-content: center | Flex-start | Flex-end | space-around | space-between
 // 7. difference between display inline, inline-block and block
-          // inline-block allows to set a width and height on the element. top and bottom margins & paddings are respected.
+// Use inline for elements that should appear on the same line and only take as much width as necessary.
+// Use inline-block for elements that should behave like inline elements but allow setting height and width.
+// Use block for elements that should start on a new line and take up the full width of their container.
 // 8. We have a heading element with text welcome how to focus on that element
           // We cannot focus an element with CSS alone. We need javascript for that. If we want to add a CSS to an element when its focused we can use :focus pseudo class.
           // A pseudo-class is a keyword added to a CSS selector. The pseudo-class specifies the state in which an element should appear in order for a style to apply. Pseudo-classes are added after a selector.
+          // :link, :visited, :hover, :active
 // 9.   CSS Semantics
 
 
@@ -52,17 +62,21 @@ mainD.innerHTML = `<h1>Hello</h1>`;
 // 8. Change let to var then what will be the output.
 // 9. How to use generator functions and where to use.
 // 10. What are closures.
-// 11. JavaScript expression and declaration difference
+// 11. JavaScript declaration and expression  difference
+// declaration => function food(){return 'Food'} , Expression => const food = function(){return 'food'}
 // 12. What is a callback function
-// 13.create a custom promise
+// 13. create a custom promise
 // 14. bind, call and apply
 // 15. write the code of polyfill for JavaScript bind method.
 // 16. how many ways we can create object
-// 17. features of this keyword
+//      I) object litral (normal object creation), II)Object constructor (new Object), III) Constructor function IV)Object.create(), V) Class 
+// 17. features of this keyword - Answer in indexTwo File
 // 18. for object let obj= {id:1, name: "ABC"} allow user only to change name react
-// 19. object.freeze
+// 19. object.freeze -  Freezing an object does not allow new properties to be added to the object and prevents removing or altering the existing properties
 // 10. what is prototypical inheritance with example
-// 21. currying in JavaScript?
+//      In JavaScript, objects have a special hidden property [[Prototype]] (as named in the specification), that is either null or references another object. That object is called “a prototype”
+//      When we read a property from object, and it’s missing, JavaScript automatically takes it from the prototype. In programming, this is called “prototypal inheritance”. 
+// 21. currying in JavaScript?  a process in functional programming in which you can transform a function with multiple arguments into a sequence of nesting functions;
 // 22. sum (1)(2)(3) for n number of argument
 // 23 Progressive web apps?
 // 24 How to export and import a module in JavaScript?
@@ -156,3 +170,79 @@ mainD.innerHTML = `<h1>Hello</h1>`;
 // 2. Difference between Jest, Enzyme and RTL.
 // 3. Focused on RTL - explain how to test a component using RTL.
 // 4. queries for RTL
+
+
+// Object litrals :=
+// Shorthand Property Names:
+
+// You can omit the property name if it matches the variable name used for the property value.
+// javascript
+// Copy code
+// // Before ES6
+// let x = 10, y = 20;
+// let obj = { x: x, y: y };
+
+// // ES6 and later
+// let x = 10, y = 20;
+// let obj = { x, y };
+// Shorthand Method Names:
+
+// You can omit the function keyword when defining methods inside an object.
+// javascript
+// Copy code
+// // Before ES6
+// let obj = {
+//   foo: function() {
+//     console.log('Hello');
+//   }
+// };
+
+// // ES6 and later
+// let obj = {
+//   foo() {
+//     console.log('Hello');
+//   }
+// };
+// Computed Property Names:
+
+// You can use expressions for property names.
+// javascript
+// Copy code
+// let prop = 'name';
+
+// // Before ES6
+// let obj = {};
+// obj[prop] = 'John';
+
+// // ES6 and later
+// let obj = {
+//   [prop]: 'John'
+// };
+// Object Method Binding:
+
+// Methods defined in an object are automatically bound to the object.
+// javascript
+// Copy code
+// let obj = {
+//   value: 42,
+//   getValue() {
+//     return this.value;
+//   }
+// };
+
+// console.log(obj.getValue()); // Outputs 42
+// Object Prototype:
+
+// You can directly set the prototype of an object during its creation.
+// javascript
+// Copy code
+// let parent = { x: 10 };
+
+// // Before ES6
+// let child = Object.create(parent);
+
+// // ES6 and later
+// let child = {
+//   __proto__: parent
+// };
+// These enhancements make object literals more expressive and concise, improving the readability and writability of JavaScript code. They are part of the ongoing effort to make JavaScript more modern and developer-friendly.
