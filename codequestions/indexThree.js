@@ -26,3 +26,54 @@
 // // add value at the first index of array
 // arr.unshift(9)
 // console.log(arr)
+
+// 4) Flatten object
+// const flatObj = (obj) => {
+//     // console.log(obj);
+//     let result = {};
+
+//     for (const a in obj) {
+//       if (typeof obj[a] === "object" && !Array.isArray(obj[a])) {
+//         const temp = flatObj(obj[a]);
+//         for (const b in temp) {
+//           result[a + "." + b] = temp[b];
+//         }
+//       } else {
+//         result[a] == obj[a];
+//       }
+//     }
+//     return result;
+//   };
+
+// 5) make private properties
+// let obj = {
+//     _id: 1,
+//     _name: "ABC", // Use an underscore to indicate it's a private property
+//     set name(newName) {
+//         this._name = newName;
+//     },
+//     get name() {
+//         return this._name;
+//     }
+// };
+
+// Object.defineProperty(obj, "id", {
+//     get: function () {
+//         return this._id;
+//     },
+//     enumerable: true,
+// });
+
+// Object.defineProperty(obj, "name", {
+//     get: function () {
+//         return this._name;
+//     },
+//     set: function (newName) {
+//         this._name = newName;
+//     },
+//     enumerable: true,
+// });
+
+// obj.id = 2
+
+// console.log(obj.id)

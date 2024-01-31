@@ -1,7 +1,8 @@
 // // OBJECT
 
 
-// 1) "this" - It is an spacial identifier which is automatically gets defined inside an object and function. In both cases it refers to an object.
+// 1) "this" - It is an spacial identifier which is automatically gets defined inside an object and function. 
+// In both cases it refers to an object.
 // // this referce to the object it is being used inside or the this references the object that is currently calling the function
 // // (we can bind the function to different objects with call, bind and apply methods).
 // let counter = {
@@ -211,7 +212,7 @@
 //   kab: { app: kappa },
 //   deb: [, aa],
 // } = a;
-// // console.log(aa);
+// // console.log(prop, kappa, aa);
 
 
 // // 6) this scope

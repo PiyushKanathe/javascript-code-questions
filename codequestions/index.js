@@ -34,7 +34,7 @@
           // Flex-direction: row | row-reverse | column | column-reverse
           // align-items: flex-start | flex-end | center | baseline | stretch
           // justify-content: start |  center | space-between | space-around | space-evenly
-          // aline-content: center | Flex-start | Flex-end | space-around | space-between
+          // align-content: center | Flex-start | Flex-end | space-around | space-between
 // 7. difference between display inline, inline-block and block
 // Use inline for elements that should appear on the same line and only take as much width as necessary.
 // Use inline-block for elements that should behave like inline elements but allow setting height and width.
@@ -74,13 +74,13 @@
 // 18. for object let obj= {id:1, name: "ABC"} allow user only to change name react
 // 19. object.freeze -  Freezing an object does not allow new properties to be added to the object and prevents removing or altering the existing properties
 // 10. what is prototypical inheritance with example
-//      In JavaScript, objects have a special hidden property [[Prototype]] (as named in the specification), that is either null or references another object. That object is called “a prototype”
+//      In JavaScript, objects have a special hidden property [[Prototype]], that is either null or references another object. That object is called “a prototype”
 //      When we read a property from object, and it’s missing, JavaScript automatically takes it from the prototype. In programming, this is called “prototypal inheritance”. 
 // 21. currying in JavaScript?  a process in functional programming in which you can transform a function with multiple arguments into a sequence of nesting functions;
 // 22. sum (1)(2)(3) for n number of argument
-// 23 Progressive web apps?
+// 23 Progressive web apps? Progressive Web Apps (PWAs) are applications that you build by using web technologies like html, CSS, javascript and that can be installed and can run on all devices, from one codebase.
 // 24 How to export and import a module in JavaScript?
-// 25 What are the different ways to export a module?
+// 25 What are the different ways to export a module? es5 - module.export and require() | es6 import and export
 // 26. Tell me about JavaScript performance.
 // 27. Minification in JavaScript
 // 28. Webpack
@@ -122,7 +122,7 @@
 // 10. In which version hooks introduced and what are the rules for hooks?
 // 11. Explain different types of hooks you know.
          // useState(), useEffect(callback, array), useCallback(callback,array), useMemo(callback,array), useSelector(callback), useDispatch()”returns reference to dispatch function from redux store”, useStore().
-// 12. Write one example Syntax for useeffect() and useState()
+// 12. Write one example Syntax for useEffect() and useState()
 // 13. Difference in useState and useReducer.
 // 14. useReducer works on component level or application level.
 // 15. How to use useReducer on application level?

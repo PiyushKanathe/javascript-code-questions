@@ -31,18 +31,21 @@ body {
     border: 1px dashed rebeccapurple;
     position: absolute;
     right: 0%;
+    background-color: rebeccapurple;
 }
 
 .innerTwo {
     border: 1px dashed blue;
     position: relative;
     left: 10px;
+    background-color: blue;
 }
 
 .innerThree {
     border: 1px dashed red;
     position: fixed;
     bottom: 100px;
+    background-color: red;
 }
 
 .innerFour {
@@ -50,4 +53,22 @@ body {
     position: sticky;
     bottom: 0;
     left: 40px;
+    background-color: black;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.column {
+    background-color: white;
+    border: 1px solid black;
+    height: 50Px;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.green {
+    background-color: green;
 }
