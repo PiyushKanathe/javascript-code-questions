@@ -5,8 +5,8 @@
 // 1. Explain about HTML5 new layout elements introduced - Header, nav, section, article, aside, footer.
 // 2. Main reasons for Header, footer, nav introduced in HTML5.
 // 3. Use of embed tags
-   // •	Iframe - The <iframe> creates an inline frame, which embeds an independent HTML document into the current document. Displayed as inline
-   // •	Embed - The <embed> element creates an embedded panel in which a third-party application can run. Displayed as block
+// •	Iframe - The <iframe> creates an inline frame, which embeds an independent HTML document into the current document. Displayed as inline
+// •	Embed - The <embed> element creates an embedded panel in which a third-party application can run. Displayed as block
 // 4. what is web accessibility in HTML – developing and designing websites/technologies so that the people with disability can use them
 // 5. HTML 5 features like storage - localStorage - stores data with no expiration date. window. sessionStorage - stores data for one session (data is lost when the browser tab is closed)
 // 6. Difference between local and session storage in JavaScript.
@@ -17,9 +17,8 @@
 //        II) Flexible layouts, ex: max-width: 100%
 //       III) Media Queries: @media (max-width: 768px)
 //        IV) Flexible Grid System. .container{ display: flex; flex-wrap: wrap}
-//         V) Fluid Typography: use relative units like em and rem 
-// 9. html 5 api - canvas api, geolocation api, web storage api (session storage and local storage), Audio & Video, drag and drop, notification api, web sockets. 
-
+//         V) Fluid Typography: use relative units like em and rem
+// 9. html 5 api - canvas api, geolocation api, web storage api (session storage and local storage), Audio & Video, drag and drop, notification api, web sockets.
 
 // CSS
 // 0. box model – CSS box model is a box that wraps around every html element (content, padding, border, margin)
@@ -30,21 +29,20 @@
 // 4. If can’t edit id still want to use class then how can we do. (Without changing any code)
 // 5. Place section/div into the center of the div. show using plain CSS. 1) draw div with 100px of width and height and assign it to center. 2) now draw one more div inside with 20px of height and width position it to top right corner. 3) Different ways to implement above.
 // 6. what is flex box? – it helps with making flexible responsive layout without using float or positioning
-          // Display: flex
-          // Flex-direction: row | row-reverse | column | column-reverse
-          // align-items: flex-start | flex-end | center | baseline | stretch
-          // justify-content: start |  center | space-between | space-around | space-evenly
-          // align-content: center | Flex-start | Flex-end | space-around | space-between
+// Display: flex
+// Flex-direction: row | row-reverse | column | column-reverse
+// align-items: flex-start | flex-end | center | baseline | stretch
+// justify-content: start |  center | space-between | space-around | space-evenly
+// align-content: center | Flex-start | Flex-end | space-around | space-between
 // 7. difference between display inline, inline-block and block
 // Use inline for elements that should appear on the same line and only take as much width as necessary.
 // Use inline-block for elements that should behave like inline elements but allow setting height and width.
 // Use block for elements that should start on a new line and take up the full width of their container.
 // 8. We have a heading element with text welcome how to focus on that element
-          // We cannot focus an element with CSS alone. We need javascript for that. If we want to add a CSS to an element when its focused we can use :focus pseudo class.
-          // A pseudo-class is a keyword added to a CSS selector. The pseudo-class specifies the state in which an element should appear in order for a style to apply. Pseudo-classes are added after a selector.
-          // :link, :visited, :hover, :active
+// We cannot focus an element with CSS alone. We need javascript for that. If we want to add a CSS to an element when its focused we can use :focus pseudo class.
+// A pseudo-class is a keyword added to a CSS selector. The pseudo-class specifies the state in which an element should appear in order for a style to apply. Pseudo-classes are added after a selector.
+// :link, :visited, :hover, :active
 // 9.   CSS Semantics
-
 
 // jQuery
 // 1.       Difference between load and ready function.
@@ -55,8 +53,8 @@
 // 3. difference between null and undefined
 // 4. Type of null
 // 5. Explain Es6 features. - Arrow, classes, enhanced object litrals, optional chaining
-        // templet strings – HTML template, expression substitution, variable substitution, multiline strings
-        // destructuring, default, rest, spread, let, const, iterators + for-of, generators, promises.
+// templet strings – HTML template, expression substitution, variable substitution, multiline strings
+// destructuring, default, rest, spread, let, const, iterators + for-of, generators, promises.
 // 6. difference between var, let and const.
 // 7. hoisting - moving all declarations to the top of the current scope
 // 8. Change let to var then what will be the output.
@@ -69,13 +67,13 @@
 // 14. bind, call and apply
 // 15. write the code of polyfill for JavaScript bind method.
 // 16. how many ways we can create object
-//      I) object litral (normal object creation), II)Object constructor (new Object), III) Constructor function IV)Object.create(), V) Class 
+//      I) object litral (normal object creation), II)Object constructor (new Object), III) Constructor function IV)Object.create(), V) Class
 // 17. features of this keyword - Answer in indexTwo File
 // 18. for object let obj= {id:1, name: "ABC"} allow user only to change name react
 // 19. object.freeze -  Freezing an object does not allow new properties to be added to the object and prevents removing or altering the existing properties
 // 10. what is prototypical inheritance with example
 //      In JavaScript, objects have a special hidden property [[Prototype]], that is either null or references another object. That object is called “a prototype”
-//      When we read a property from object, and it’s missing, JavaScript automatically takes it from the prototype. In programming, this is called “prototypal inheritance”. 
+//      When we read a property from object, and it’s missing, JavaScript automatically takes it from the prototype. In programming, this is called “prototypal inheritance”.
 // 21. currying in JavaScript?  a process in functional programming in which you can transform a function with multiple arguments into a sequence of nesting functions;
 // 22. sum (1)(2)(3) for n number of argument
 // 23 Progressive web apps? Progressive Web Apps (PWAs) are applications that you build by using web technologies like html, CSS, javascript and that can be installed and can run on all devices, from one codebase.
@@ -87,21 +85,21 @@
 // 29. lazy loading
 // 30. How you tested your application that it is loading components based on the demand?
 // 31. sort array of object by name
-            // let Arr=[
-            //   {
-            //     id:1,
-            //     name: "Ketan"
-            //   },
-            //   {
-            //     id:2,
-            //     name: "Amit"
-            //   }
-            // ];
+// let Arr=[
+//   {
+//     id:1,
+//     name: "Ketan"
+//   },
+//   {
+//     id:2,
+//     name: "Amit"
+//   }
+// ];
 // 32. difference between map and forEach
 // 33. local, session and cookie
-         // localStorage.setItem(key, value); let a = localStorage.getItem(key); localStorage.removeItem(key); localStorage.clear()
-         // sessionStorage.setItem(key, value); let a = sessionStorage.getItem(key); sessionStorage.removeItem(key); sessionStorage.clear();
-         // document.cookie = “key=value; expire=Date;path=/”
+// localStorage.setItem(key, value); let a = localStorage.getItem(key); localStorage.removeItem(key); localStorage.clear()
+// sessionStorage.setItem(key, value); let a = sessionStorage.getItem(key); sessionStorage.removeItem(key); sessionStorage.clear();
+// document.cookie = “key=value; expire=Date;path=/”
 // 34. memorising in javascript
 // 35. Splice and slice difference
 // 36. let pe = document.querySelectorAll('div.classname p')
@@ -116,12 +114,12 @@
 // 7. setState() is synchronous or asynchronous. explain the scenario how can we handle the case when we need to use updated state immediately.
 // 8. how to check prop type in react?
 // 9. Lifecycle methods. Explain all.
-         // Constructor, getDerivedStateFromProps, render, componentDidMount /
-         // getDerivedStateFromProps, shouldComponentUpdate, render, getSnapshotBeforeUpdate, componentDidUpdate
-         // componentWillUnmount
+// Constructor, getDerivedStateFromProps, render, componentDidMount /
+// getDerivedStateFromProps, shouldComponentUpdate, render, getSnapshotBeforeUpdate, componentDidUpdate
+// componentWillUnmount
 // 10. In which version hooks introduced and what are the rules for hooks?
 // 11. Explain different types of hooks you know.
-         // useState(), useEffect(callback, array), useCallback(callback,array), useMemo(callback,array), useSelector(callback), useDispatch()”returns reference to dispatch function from redux store”, useStore().
+// useState(), useEffect(callback, array), useCallback(callback,array), useMemo(callback,array), useSelector(callback), useDispatch()”returns reference to dispatch function from redux store”, useStore().
 // 12. Write one example Syntax for useEffect() and useState()
 // 13. Difference in useState and useReducer.
 // 14. useReducer works on component level or application level.
@@ -152,9 +150,9 @@
 
 // Redux
 // 0. Redux basic principles
-         //  Single source of truth – applications global state will be stx`ored in store object
-         // State is Read Only – only way to change a state is by emitting actions.
-         //        Changes can be done with pure functions only – reducers are pure function
+//  Single source of truth – applications global state will be stored in store object
+// State is Read Only – only way to change a state is by emitting actions.
+//        Changes can be done with pure functions only – reducers are pure function
 // 1. Why we use redux.
 // 2. In functional component there are three level hierarchy of components parent-> child -> grandchild, how to handle state management.
 // 3. Which HOC is used in redux.
@@ -170,7 +168,6 @@
 // 2. Difference between Jest, Enzyme and RTL.
 // 3. Focused on RTL - explain how to test a component using RTL.
 // 4. queries for RTL
-
 
 // Object litrals :=
 // Shorthand Property Names:

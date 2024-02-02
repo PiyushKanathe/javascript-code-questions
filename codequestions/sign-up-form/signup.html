@@ -1,0 +1,66 @@
+<div>
+  <!-- <form id="formElem">
+    <input type="text" name="name" value="John" />
+    <input type="text" name="surname" value="Smith" />
+    <input type="submit" />
+  </form>
+
+  <script>
+    formElem.onsubmit = (e) => {
+      e.preventDefault();
+      let formData = new FormData(formElem);
+      for (let pair of formData.entries()) {
+        console.log(pair[0], pair[1]);
+      }
+    }
+  </script> -->
+
+  <form id="signup">
+    <h2>Sign Up</h2>
+    <div>
+      <label for="name">Name: </label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" />
+      <small></small>
+    </div>
+    <div>
+      <label for="email">Email: </label>
+      <input type="text" id="email" name="email" placeholder="Enter your email" />
+      <small></small>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+  <script>
+    function showMsg(input, message, type) {
+      const msg = input.parentNode.querySelector("small");
+      msg.innerText = message;
+      input.className = type ? "success" : "error";
+      return type
+    }
+
+    function showSuccess(input, message) {
+      return showMsg(input, "", true)
+    }
+
+    function showError(input, msg) {
+      return showMsg(input, msg, false)
+    }
+
+    function hasValue(input, message) {
+      if (input.value.trim() === "") {
+        return showError(input, message)
+      }
+      return showSuccess(input)
+    }
+
+    const form = document.getElementById('signup');
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      let nameValid = hasValue(form.elements["name"], "Please enter your name");
+      let emailValidate = hasValue(form.elements["email"], "Please enter your email");
+      if (nameValid && emailValidate) {
+        console.log("Form Submitted");
+      }
+    })
+  </script>
+</div>

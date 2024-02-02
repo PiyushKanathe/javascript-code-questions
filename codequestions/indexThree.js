@@ -12,6 +12,7 @@
 // arrayList = []; // empty only mentioned array
 // arrayList.length = 0; // empty array and all the references made from this array
 // arrayList.splice(0, arrayList.length) // empty array and all the references made from this array
+// pop
 
 // // 3)
 // var arr = [1,2,3,4]

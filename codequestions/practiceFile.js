@@ -123,34 +123,46 @@
 //     console.log(y);
 //   })();
 
-// var value = 10;
-// function p() {
-//   var value = 41;
-//   console.log("Normal function " + this.value + " " + value);
-//   function y() {
-//     console.log("innner function " + this.value + " " + value);
-//   }
-//   y();
-//   const a = () => {
-//     console.log("innner function " + this.value + " " + value);
-//   };
-//   a();
-// }
-// p();
+var value = 10;
+function p() {
+  var value = 41;
+  console.log("Normal function " + this.value + " " + value);
+  function y() {
+    console.log("innner function " + this.value + " " + value);
+  }
+  y();
+  const a = () => {
+    console.log("innner function " + this.value + " " + value);
+  };
+  a();
+}
+p();
 
-// var valueOuter = 10;
-// const q = {
-//   value: 41,
-//   y() {
-//     console.log(`innner function => ${this.value}, ${this.valueOuter}, ${valueOuter}`);
-//   },
-//   a: () => {
-//     console.log(`innner arrow function => ${this.valueOuter}, ${valueOuter}`);
-//   },
-// };
+var valueOuter = 10;
+const q = {
+  value: 41,
+  y() {
+    console.log(`innner function => ${this.value}, ${this.valueOuter}, ${valueOuter}`);
+  },
+  a: () => {
+    console.log(`innner arrow function => ${this.valueOuter}, ${valueOuter}`);
+  },
+};
 
-// q.y()
-// q.a()
+q.y()
+q.a()
+
+function Cat(name, age) {
+  this.name = name;
+  this.age = age;
+  this.meow = () => console.log("Meow!");
+}
+
+let myCat = new Cat("Waldorf", 16)
+let anotherCat = new Cat("Statler", 12)
+
+myCat.meow()
+console.log(anotherCat.name)
 
 // let a = "innner arrow function";
 
@@ -643,18 +655,70 @@ var TimeLimitedCache = function () {
 
 // console.log(findMedianSortedArrays([1,3], [2]))
 
-/**
- * @param {number[]} nums
- * @return {number}
- */
-var removeDuplicates = function(nums) {
-  let result = []
-  nums.map(num => {
-      if(!result.includes(num)){
-          result.push(num)
-      }
-  })
-  return result.length
+// /**
+//  * @param {number[]} nums
+//  * @return {number}
+//  */
+// var removeDuplicates = function(nums) {
+//   let result = []
+//   nums.map(num => {
+//       if(!result.includes(num)){
+//           result.push(num)
+//       }
+//   })
+//   return result.length
+// };
+
+// console.log(removeDuplicates([1,1,2]))
+
+// const carDetails = {
+//   name: "Tomer",
+//   getName(){
+//      return this.name;
+//   },
+  
+// };
+// var name = "Joe";
+// var getCarName = carDetails.getName;
+// console.log(getCarName());
+
+const dataSet = [
+  {
+    name: "pencil",
+    count: 2,
+    price: 10,
+  },
+  {
+    name: "pen",
+    count: 10,
+    price: 20,
+  },
+  {
+    name: "marker",
+    count: 5,
+    price: 30,
+  },
+  {
+    name: "Eraser",
+    count: 5,
+    price: 30,
+  },
+];
+
+const asp = (updateItem) => {
+  let app = dataSet.map((item) => {
+    if (item.name.toLowerCase() === updateItem.toLowerCase()) {
+      return {
+        ...item,
+        name: "New1",
+        count: 11,
+        price: 12,
+      };
+    }
+    return item;
+  });
+
+  console.log(app)
 };
 
-console.log(removeDuplicates([1,1,2]))
+asp('Eraser')
