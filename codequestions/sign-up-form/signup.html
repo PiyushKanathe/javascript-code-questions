@@ -13,6 +13,14 @@
         console.log(pair[0], pair[1]);
       }
     }
+    let formData = new FormData(document.getElementById('myForm'));
+    let formObject = {};
+
+    for (let [key, value] of formData.entries()) {
+      formObject[key] = value;
+    }
+
+    console.log(formObject);
   </script> -->
 
   <form id="signup">
