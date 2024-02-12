@@ -681,44 +681,4 @@ var TimeLimitedCache = function () {
 // var name = "Joe";
 // var getCarName = carDetails.getName;
 // console.log(getCarName());
-
-const dataSet = [
-  {
-    name: "pencil",
-    count: 2,
-    price: 10,
-  },
-  {
-    name: "pen",
-    count: 10,
-    price: 20,
-  },
-  {
-    name: "marker",
-    count: 5,
-    price: 30,
-  },
-  {
-    name: "Eraser",
-    count: 5,
-    price: 30,
-  },
-];
-
-const asp = (updateItem) => {
-  let app = dataSet.map((item) => {
-    if (item.name.toLowerCase() === updateItem.toLowerCase()) {
-      return {
-        ...item,
-        name: "New1",
-        count: 11,
-        price: 12,
-      };
-    }
-    return item;
-  });
-
-  console.log(app)
-};
-
-asp('Eraser')
+ 

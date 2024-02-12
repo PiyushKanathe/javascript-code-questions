@@ -1,0 +1,28 @@
+.parent .child .grandchild .great-grandchild, .parent .child .grandchild, .parent .child, .parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent {
+  width: 100%;
+  height: 300px;
+  background-color: lightblue;
+}
+.parent .child {
+  width: 90%;
+  height: 90%;
+  background-color: lightcoral;
+}
+.parent .child .grandchild {
+  width: 90%;
+  height: 90%;
+  background-color: lightgreen;
+}
+.parent .child .grandchild .great-grandchild {
+  width: 90%;
+  height: 90%;
+  background-color: lightgoldenrodyellow;
+}
+
+/*# sourceMappingURL=example.css.map */

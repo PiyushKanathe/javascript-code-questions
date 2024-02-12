@@ -1,0 +1,7 @@
+//variable 
+$size-variation: 90%;
+
+// mixin
+@mixin theme($backgroundColour: lightblue) {
+  background-color: $backgroundColour;
+}
