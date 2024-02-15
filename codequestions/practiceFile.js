@@ -682,3 +682,10 @@ var TimeLimitedCache = function () {
 // var getCarName = carDetails.getName;
 // console.log(getCarName());
  
+// let d = ["2022-01-02", "2023-02-01", "2021-04-01"]
+
+// console.log(d.sort((a,b) => {
+//   let x = new Date(a);
+//   let y = new Date(b);
+//   return x-y
+// }))

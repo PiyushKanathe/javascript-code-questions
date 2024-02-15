@@ -1,12 +1,12 @@
 // npx sass --watch styles.scss styles.css
 
 
-// Variables
-// Nesting
-// Modules
-// Mixins
-// Inheritance
-// Operators
+// Variables $
+// Nesting 
+// Modules @use
+// Mixins @mixin
+// Inheritance %
+// Operators +-*/%
 
 @use 'moduled' as moduled;
 
